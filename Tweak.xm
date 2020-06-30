@@ -1,3 +1,7 @@
+@interface CALayer (Private)
+@property (atomic, assign, readwrite) BOOL continuousCorners;
+@end
+
 @interface CCUIContentModuleContentContainerView : UIView
 @property (assign,nonatomic) double compactContinuousCornerRadius;
 @property (assign,nonatomic) double expandedContinuousCornerRadius;
@@ -25,6 +29,7 @@
   WAWeatherPlatterViewController *platterController = MSHookIvar<WAWeatherPlatterViewController *>(self, "_platterController");
   platterController.backgroundView.hidden = YES;
   UIView *weatherView = MSHookIvar<UIView *>(self, "_weatherView");
+	weatherView.layer.continuousCorners = YES;
   CCUIContentModuleContainerViewController  *parentViewController = (CCUIContentModuleContainerViewController *)self.parentViewController;
   BOOL expanded = [parentViewController isExpanded];
   if (expanded) {

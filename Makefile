@@ -1,4 +1,4 @@
-PACKAGE_VERSION = 1.1
+PACKAGE_VERSION = 1.3
 INSTALL_TARGET_PROCESSES = SpringBoard
 
 include $(THEOS)/makefiles/common.mk
