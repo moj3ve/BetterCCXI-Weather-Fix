@@ -1,0 +1,9 @@
+Package: com.colec.betterccxiweatherfix
+Name: BetterCCXI Weather Fix
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: Fix for BetterCCXI Weather iOS 13.
+Maintainer: cole cabral
+Author: cole cabral
+Section: Tweaks
